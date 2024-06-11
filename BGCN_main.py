@@ -10,13 +10,13 @@ MIT License for more details.
 import tensorflow.compat.v1 as tf
 tf.disable_v2_behavior()
 import numpy as np
-from src.GNN_models import GnnModel
-from src.data_partition import data_partition_fix, data_partition_random
+from BGCN.src.GNN_models import GnnModel
+from BGCN.src.data_partition import data_partition_fix, data_partition_random
 import random
-from src.utils import save_log_func
+from BGCN.src.utils import save_log_func
 import argparse
 import os
-from src.flags import flags
+from BGCN.src.flags import flags
 
 import csv
 
