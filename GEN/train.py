@@ -37,7 +37,7 @@ torch.manual_seed(args.seed)
 torch.cuda.manual_seed(args.seed)
 np.random.seed(args.seed)
 
-data = load_data("../data", args.dataset).to(device)
+data = load_data("./data", args.dataset).to(device)
 
 base_model_args = {"num_feature": data.num_feature, "num_class":data.num_class,
                 "hidden_size": args.hidden, "dropout":args.dropout, "activation": args.activation}
